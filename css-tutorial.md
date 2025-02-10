@@ -1303,6 +1303,9 @@ font-weight: bold;
 
 
 ### ผลการทดลอง
+
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/34cf5c84-b7bd-4025-be91-8772da6d0227)
 ```html
 [วางโค้ด HTML ที่นี่]
 ```<!DOCTYPE html>
@@ -1440,6 +1443,4 @@ font-weight: bold;
             }
         }
     </style>
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![image](https://github.com/user-attachments/assets/34cf5c84-b7bd-4025-be91-8772da6d0227)
 
