@@ -230,6 +230,9 @@ div > p {
 2. แก้ไขให้เมนูถูกเลือกที่ สินค้า
 3. เปลี่ยนสีพื้นหลังของเมนู
 
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/598039ff-055b-435f-8db4-8e8e9eb03656)
+
 ### ผลการทดลอง
 ```html
 [วางโค้ดที่นี่]
@@ -287,12 +290,6 @@ div > p {
     </nav>
 </body>
 </html>
-
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
-![image](https://github.com/user-attachments/assets/6ada39ef-37c4-4c77-9419-0f1582388227)
-
-
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
 ## การทดลองที่ 3: การจัดการสีและพื้นหลัง
@@ -394,10 +391,148 @@ background-size: cover;
 3. เพิ่มเติมให้มี card แสดงข้อมูลสินค้า 4 รูป
 
 ### ผลการทดลอง
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/a8635b9c-81e2-45a3-b801-43447d4d514b)
+
+![image](https://github.com/user-attachments/assets/9a15f0b8-8687-4542-9f06-9512d43a0ddf)
+
+![image](https://github.com/user-attachments/assets/33a969c9-ece1-44e7-9b87-511a786a9940)
+
 ```html
 [วางโค้ดที่นี่]
-```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .product-card {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('product.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: block;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .product-button:hover {
+            background: linear-gradient(to right, #0056b3, #003980);
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image"><img src="images/th-galaxy-s25-s938-sm-s938bzgcthl-thumb-544710449.avif" 
+            alt="images/th-galaxy-s25-s938-sm-s938bzgcthl-thumb-544710449.avif"></div>
+        <div class="product-info">
+            <h2 class="product-title">Galaxy S25 Ultra</h2>
+            <p class="product-price">52,900</p>
+            <p class="product-description">
+                หน้าจอ: 6.9” Dynamic AMOLED 2X
+Chipset: Snapdragon 8 Elite for Galaxy
+ระบบปฏิบัติการ: Android 15 One UI 7.0
+RAM 12GB ความจุ 512GB
+กล้องหน้า(MP): 12 MP
+กล้องหลัง(MP): UW50+W200+Tele10+periscope telephoto 50
+Water Resistant: IP68
+รองรับ 2 ซิม (Y/N):Y
+แบตเตอรี่(mAh): 5,000mAh
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image"><img src="images/images.jpg" 
+                alt="images/images.jpg"></div>
+            <div class="product-info">
+                <h2 class="product-title">Galaxy S25+</h2>
+                <p class="product-price">52,900</p>
+                <p class="product-description">
+                    หน้าจอ: 6.7” Dynamic AMOLED 2X
+Chipset: Snapdragon 8 Elite for Galaxy
+ระบบปฏิบัติการ: Android 15 One UI 7.0
+RAM 12GB ความจุ 512 GB
+กล้องหน้า(MP): 12 MP
+กล้องหลัง(MP): UW12+W50+Tele10
+Water Resistant: IP68
+รองรับ 2 ซิม (Y/N):Y
+แบตเตอรี่(mAh): 4,900mAh
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="images/ดาวน์โหลด.jpg" 
+            alt="images/ดาวน์โหลด.jpg"></div>
+        <div class="product-info">
+            <h2 class="product-title">Galaxy S24 Ultra</h2>
+            <p class="product-price">34,900</p>
+            <p class="product-description">
+                จอภาพ AMOLED ขนาด 6.8 นิ้ว– ความละเอียด WQHD+ อัตรารีเฟรช 120Hzชิปเซต Snapdragon 8 Gen 3
+                หน่วยความจำ RAM 8GB / 12GB
+                สตอเรจกล้องหลัง กล้องหลัก 200MP กล้องอัลตราไวด์ 12MP
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+</div>
+<div class="product-card">
+    <div class="product-image"><img src="images/GS24.avif" 
+        alt="images/GS24.avif"></div>
+    <div class="product-info">
+        <br>
+        <h2 class="product-title">Galaxy S24</h2>
+        <p class="product-price">29,900</p>
+        <p class="product-description">
+           =จอภาพ AMOLED ขนาด 6.2 หรือ 6.7 นิ้ว
+            ความละเอียด WQHD+ อัตรารีเฟรช 120Hzชิปเซต Exynos 2400 / Snapdragon 8 Gen 3
+            หน่วยความจำ RAM 8GB / 12GBสตอเรจ ROM 256GB / 512GB กล้องหลัง– กล้องหลัก 50MP กล้องอัลตราไวด์ 12MP 
+            กล้องเทเลโฟโต 10MP ซูมออปติคัล 3 เท่า การเชื่อมต่อ Bluetooth 5.3
+            แบตเตอรี่ 4,000mAh หรือ 4900mAh, รองรับชาร์จไว 25Wน้ำหนัก 168 หรือ 195 กรัม
+            ระบบปฏิบัติการ One UI 6.1 บน Android 14
+        </p>
+        <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+</div>
+        </div>
+</body>
+</html>
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -492,13 +627,79 @@ border: 1px solid black;
 
 
 ### ผลการทดลอง
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/bb61637d-9193-4210-bab1-644db058816d)
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,911</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">99.1K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">77%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```css
 [วางโค้ด CSS ที่นี่]
-```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```<style>
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1500px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stat-box {
+            flex: 6;
+            margin: 0 15px;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgb(132, 238, 241);
+            border-radius: 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 4.0rem;
+            font-weight: bolder;
+            color: #007bff;
+            margin-bottom: 10rem;
+        }
+
+        .stat-label {
+            font-family: 'Geneva';
+            font-size: 1rem;
+            color: #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .stats-container {
+                flex-direction: column;
+            }
+
+            .stat-box {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
@@ -610,13 +811,98 @@ font-weight: bold;
 2. ปรับแต่งรูปแบบ สีและขนาด font
 
 ### ผลการทดลอง
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/addcaa66-9034-417a-89d0-18a5933014c9)
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 1 มกราคม 2025 | โดย ผู้เขียน</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html>
 ```css
 [วางโค้ด CSS ที่นี่]
-```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```<style>
+        .blog-post {
+            max-width: 200px;
+            margin: 1rem;
+            padding: 0 1rem;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        .post-header {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            color: #000e02;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .post-meta {
+            color: #636363;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ff0606;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content h2 {
+            font-size: 1.8rem;
+            color: #780083;
+            margin: 2rem 0 1rem;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 3px solid #007bff;
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            color: #f00000;
+        }
+
+        @media (max-width: 18px) {
+            .post-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
@@ -757,13 +1043,120 @@ font-weight: bold;
 
 
 ### ผลการทดลอง
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/12fd6515-e531-4035-b1cb-1bebba925dde)
+
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/GS24.avif')"></div>
+            <div class="product-details">
+                <h3 class="product-title">samsung galaxy s24</h3>
+                <div class="product-price">฿29,900</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/ดาวน์โหลด.jpg')"></div>
+            <div class="product-details">
+                <h3 class="product-title">samsung galaxy s24 ultra</h3>
+                <div class="product-price">฿34,900</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- เพิ่มสินค้าอื่นๆ ตามต้องการ -->
+    </div>
+</body>
+</html>
 ```css
 [วางโค้ด CSS ที่นี่]
-```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```<style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f5f5;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .product-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
