@@ -287,8 +287,11 @@ div > p {
     </nav>
 </body>
 </html>
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![image](https://github.com/user-attachments/assets/d36c769e-3db9-4989-9721-a582a46ce98f)
+
+![image](https://github.com/user-attachments/assets/6ada39ef-37c4-4c77-9419-0f1582388227)
+
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
